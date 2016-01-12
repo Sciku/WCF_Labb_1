@@ -10,7 +10,8 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="***VÄDERKNAPP***" />
+        <br/>
         <asp:Label ID="Label1" runat="server" Text="Vädret visas här om du trycker på knappen :)"></asp:Label>
     
     </div>

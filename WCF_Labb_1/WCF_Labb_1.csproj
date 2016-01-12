@@ -75,11 +75,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TwoNumberAdd.asmx" />
     <Content Include="Weather.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TwoNumberAdd.asmx.cs">
+      <DependentUpon>TwoNumberAdd.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Weather.asmx.cs">
       <DependentUpon>Weather.asmx</DependentUpon>
       <SubType>Component</SubType>
