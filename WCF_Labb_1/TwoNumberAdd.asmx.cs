@@ -20,8 +20,8 @@ namespace WCF_Labb_1
         [WebMethod]
         public string AddTwoNumbers(string tal1, string tal2)
         {
-            var calc = int.Parse(tal1) + int.Parse(tal2);
-            return calc.ToString();
+            var calc = (int.Parse(tal1) + int.Parse(tal2)).ToString();
+            return calc;
         }
     }
 }
