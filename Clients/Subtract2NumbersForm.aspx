@@ -11,7 +11,7 @@
         <h1>THE BEST CALCULATOR IN THE UNIVERSE!!!</h1>
     <div>
     
-        <asp:TextBox ID="TextBox1" runat="server" placeholder="Skriv in första talet"></asp:TextBox> + 
+        <asp:TextBox ID="TextBox1" runat="server" placeholder="Skriv in första talet"></asp:TextBox> - 
         <asp:TextBox ID="TextBox2" runat="server" placeholder="Skriv in andra talet"></asp:TextBox> =
 
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

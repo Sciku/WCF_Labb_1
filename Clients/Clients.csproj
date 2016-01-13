@@ -70,6 +70,8 @@
   <ItemGroup>
     <Content Include="Add2NumbersForm.aspx" />
     <Content Include="Add3NumbersForm.aspx" />
+    <Content Include="NameDayForm.aspx" />
+    <Content Include="Namnsdagar.txt" />
     <Content Include="packages.config" />
     <Content Include="Service References\Add2NumbersReference\Clients.Add2NumbersReference.AddTwoNumbersResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -79,9 +81,20 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\Add3NumbersReference\ThreeNumberAdd.wsdl" />
+    <Content Include="Service References\NameDayReference\Clients.NameDayReference.InputNameReturnDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\NameDayReference\NameDay.disco" />
+    <None Include="Service References\NameDayReference\configuration91.svcinfo" />
+    <None Include="Service References\NameDayReference\configuration.svcinfo" />
+    <None Include="Service References\NameDayReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Service References\Subtract2NumbersReference\Clients.Subtract2NumbersReference.SubtractTwoNumbersResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Service References\NameDayReference\NameDay.wsdl" />
     <None Include="Service References\Subtract2NumbersReference\TwoNumberSub.wsdl" />
     <Content Include="Service References\WeatherReference\Clients.WeatherReference.WheatherForecastResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -153,6 +166,13 @@
     <Compile Include="MyWeatherForm.aspx.designer.cs">
       <DependentUpon>MyWeatherForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NameDayForm.aspx.cs">
+      <DependentUpon>NameDayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NameDayForm.aspx.designer.cs">
+      <DependentUpon>NameDayForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\Add2NumbersReference\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -160,6 +180,11 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Service References\Add3NumbersReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\NameDayReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -192,6 +217,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\Add2NumbersReference\" />
     <WCFMetadataStorage Include="Service References\Add3NumbersReference\" />
+    <WCFMetadataStorage Include="Service References\NameDayReference\" />
     <WCFMetadataStorage Include="Service References\Subtract2NumbersReference\" />
     <WCFMetadataStorage Include="Service References\WeatherReference\" />
   </ItemGroup>

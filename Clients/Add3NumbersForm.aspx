@@ -13,7 +13,6 @@
         <asp:TextBox ID="TextBox1" runat="server" placeholder="Skriv in första talet"></asp:TextBox> + 
         <asp:TextBox ID="TextBox2" runat="server" placeholder="Skriv in andra talet"></asp:TextBox> +
         <asp:TextBox ID="TextBox3" runat="server" placeholder="Skriv in tredje talet"></asp:TextBox> =
-         
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 
         <br />
