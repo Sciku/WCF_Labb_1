@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="CxeSSdif6gNdAzZbW/FV7Q+Y9AU=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="TS3XhkGjDmpAs6qpz/jaWMnClzc=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="TwoNumberAddSoap">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="TwoNumberAddSoap" contract="AddTwoNumbersReference.TwoNumberAddSoap" bindingType="basicHttpBinding" address="http://localhost:46398/TwoNumberAdd.asmx" bindingConfiguration="TwoNumberAddSoap">
+    <endpoint name="TwoNumberAddSoap" contract="Add2NumbersReference.TwoNumberAddSoap" bindingType="basicHttpBinding" address="http://localhost:46398/TwoNumberAdd.asmx" bindingConfiguration="TwoNumberAddSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://localhost:46398/TwoNumberAdd.asmx</serializedValue>
@@ -127,7 +127,7 @@
           <serializedValue>TwoNumberAddSoap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>AddTwoNumbersReference.TwoNumberAddSoap</serializedValue>
+          <serializedValue>Add2NumbersReference.TwoNumberAddSoap</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

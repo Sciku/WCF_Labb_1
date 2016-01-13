@@ -4,11 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using WeatherForm.AddTwoNumbersReference;
 
 namespace WeatherForm
 {
-    public partial class AddFrom : System.Web.UI.Page
+    public partial class Add2NumbersForm : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,7 +16,7 @@ namespace WeatherForm
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            AddTwoNumbersReference.TwoNumberAddSoapClient client = new AddTwoNumbersReference.TwoNumberAddSoapClient();
+            Add2NumbersReference.TwoNumberAddSoapClient client = new Add2NumbersReference.TwoNumberAddSoapClient();
             Label1.Text = client.AddTwoNumbers(TextBox1.Text, TextBox2.Text);
         }
     }

@@ -10,7 +10,7 @@
 namespace WeatherForm {
     
     
-    public partial class AddFrom {
+    public partial class Add2NumbersForm {
         
         /// <summary>
         /// form1 control.
