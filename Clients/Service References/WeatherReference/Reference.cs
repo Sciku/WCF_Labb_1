@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WeatherForm.WeatherReference {
+namespace Clients.WeatherReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -17,10 +17,10 @@ namespace WeatherForm.WeatherReference {
         
         // CODEGEN: Generating message contract since element name WheatherForecastResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/WheatherForecast", ReplyAction="*")]
-        WeatherForm.WeatherReference.WheatherForecastResponse WheatherForecast(WeatherForm.WeatherReference.WheatherForecastRequest request);
+        Clients.WeatherReference.WheatherForecastResponse WheatherForecast(Clients.WeatherReference.WheatherForecastRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/WheatherForecast", ReplyAction="*")]
-        System.Threading.Tasks.Task<WeatherForm.WeatherReference.WheatherForecastResponse> WheatherForecastAsync(WeatherForm.WeatherReference.WheatherForecastRequest request);
+        System.Threading.Tasks.Task<Clients.WeatherReference.WheatherForecastResponse> WheatherForecastAsync(Clients.WeatherReference.WheatherForecastRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -30,12 +30,12 @@ namespace WeatherForm.WeatherReference {
     public partial class WheatherForecastRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="WheatherForecast", Namespace="http://tempuri.org/", Order=0)]
-        public WeatherForm.WeatherReference.WheatherForecastRequestBody Body;
+        public Clients.WeatherReference.WheatherForecastRequestBody Body;
         
         public WheatherForecastRequest() {
         }
         
-        public WheatherForecastRequest(WeatherForm.WeatherReference.WheatherForecastRequestBody Body) {
+        public WheatherForecastRequest(Clients.WeatherReference.WheatherForecastRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -57,12 +57,12 @@ namespace WeatherForm.WeatherReference {
     public partial class WheatherForecastResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="WheatherForecastResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WeatherForm.WeatherReference.WheatherForecastResponseBody Body;
+        public Clients.WeatherReference.WheatherForecastResponseBody Body;
         
         public WheatherForecastResponse() {
         }
         
-        public WheatherForecastResponse(WeatherForm.WeatherReference.WheatherForecastResponseBody Body) {
+        public WheatherForecastResponse(Clients.WeatherReference.WheatherForecastResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -85,12 +85,12 @@ namespace WeatherForm.WeatherReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface WeatherSoapChannel : WeatherForm.WeatherReference.WeatherSoap, System.ServiceModel.IClientChannel {
+    public interface WeatherSoapChannel : Clients.WeatherReference.WeatherSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WeatherSoapClient : System.ServiceModel.ClientBase<WeatherForm.WeatherReference.WeatherSoap>, WeatherForm.WeatherReference.WeatherSoap {
+    public partial class WeatherSoapClient : System.ServiceModel.ClientBase<Clients.WeatherReference.WeatherSoap>, Clients.WeatherReference.WeatherSoap {
         
         public WeatherSoapClient() {
         }
@@ -112,26 +112,26 @@ namespace WeatherForm.WeatherReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WeatherForm.WeatherReference.WheatherForecastResponse WeatherForm.WeatherReference.WeatherSoap.WheatherForecast(WeatherForm.WeatherReference.WheatherForecastRequest request) {
+        Clients.WeatherReference.WheatherForecastResponse Clients.WeatherReference.WeatherSoap.WheatherForecast(Clients.WeatherReference.WheatherForecastRequest request) {
             return base.Channel.WheatherForecast(request);
         }
         
         public string WheatherForecast() {
-            WeatherForm.WeatherReference.WheatherForecastRequest inValue = new WeatherForm.WeatherReference.WheatherForecastRequest();
-            inValue.Body = new WeatherForm.WeatherReference.WheatherForecastRequestBody();
-            WeatherForm.WeatherReference.WheatherForecastResponse retVal = ((WeatherForm.WeatherReference.WeatherSoap)(this)).WheatherForecast(inValue);
+            Clients.WeatherReference.WheatherForecastRequest inValue = new Clients.WeatherReference.WheatherForecastRequest();
+            inValue.Body = new Clients.WeatherReference.WheatherForecastRequestBody();
+            Clients.WeatherReference.WheatherForecastResponse retVal = ((Clients.WeatherReference.WeatherSoap)(this)).WheatherForecast(inValue);
             return retVal.Body.WheatherForecastResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WeatherForm.WeatherReference.WheatherForecastResponse> WeatherForm.WeatherReference.WeatherSoap.WheatherForecastAsync(WeatherForm.WeatherReference.WheatherForecastRequest request) {
+        System.Threading.Tasks.Task<Clients.WeatherReference.WheatherForecastResponse> Clients.WeatherReference.WeatherSoap.WheatherForecastAsync(Clients.WeatherReference.WheatherForecastRequest request) {
             return base.Channel.WheatherForecastAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WeatherForm.WeatherReference.WheatherForecastResponse> WheatherForecastAsync() {
-            WeatherForm.WeatherReference.WheatherForecastRequest inValue = new WeatherForm.WeatherReference.WheatherForecastRequest();
-            inValue.Body = new WeatherForm.WeatherReference.WheatherForecastRequestBody();
-            return ((WeatherForm.WeatherReference.WeatherSoap)(this)).WheatherForecastAsync(inValue);
+        public System.Threading.Tasks.Task<Clients.WeatherReference.WheatherForecastResponse> WheatherForecastAsync() {
+            Clients.WeatherReference.WheatherForecastRequest inValue = new Clients.WeatherReference.WheatherForecastRequest();
+            inValue.Body = new Clients.WeatherReference.WheatherForecastRequestBody();
+            return ((Clients.WeatherReference.WeatherSoap)(this)).WheatherForecastAsync(inValue);
         }
     }
 }

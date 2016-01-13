@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WeatherForm
+namespace Clients
 {
     public partial class Add3NumbersForm : System.Web.UI.Page
     {

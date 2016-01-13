@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MyWeatherForm.aspx.cs" Inherits="WeatherForm.MyWeatherForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MyWeatherForm.aspx.cs" Inherits="Clients.MyWeatherForm" %>
 
 <!DOCTYPE html>
 

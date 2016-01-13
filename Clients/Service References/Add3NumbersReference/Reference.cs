@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WeatherForm.Add3NumbersReference {
+namespace Clients.Add3NumbersReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -17,10 +17,10 @@ namespace WeatherForm.Add3NumbersReference {
         
         // CODEGEN: Generating message contract since element name tal1 from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddThreeNumbers", ReplyAction="*")]
-        WeatherForm.Add3NumbersReference.AddThreeNumbersResponse AddThreeNumbers(WeatherForm.Add3NumbersReference.AddThreeNumbersRequest request);
+        Clients.Add3NumbersReference.AddThreeNumbersResponse AddThreeNumbers(Clients.Add3NumbersReference.AddThreeNumbersRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddThreeNumbers", ReplyAction="*")]
-        System.Threading.Tasks.Task<WeatherForm.Add3NumbersReference.AddThreeNumbersResponse> AddThreeNumbersAsync(WeatherForm.Add3NumbersReference.AddThreeNumbersRequest request);
+        System.Threading.Tasks.Task<Clients.Add3NumbersReference.AddThreeNumbersResponse> AddThreeNumbersAsync(Clients.Add3NumbersReference.AddThreeNumbersRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -30,12 +30,12 @@ namespace WeatherForm.Add3NumbersReference {
     public partial class AddThreeNumbersRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="AddThreeNumbers", Namespace="http://tempuri.org/", Order=0)]
-        public WeatherForm.Add3NumbersReference.AddThreeNumbersRequestBody Body;
+        public Clients.Add3NumbersReference.AddThreeNumbersRequestBody Body;
         
         public AddThreeNumbersRequest() {
         }
         
-        public AddThreeNumbersRequest(WeatherForm.Add3NumbersReference.AddThreeNumbersRequestBody Body) {
+        public AddThreeNumbersRequest(Clients.Add3NumbersReference.AddThreeNumbersRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -72,12 +72,12 @@ namespace WeatherForm.Add3NumbersReference {
     public partial class AddThreeNumbersResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="AddThreeNumbersResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WeatherForm.Add3NumbersReference.AddThreeNumbersResponseBody Body;
+        public Clients.Add3NumbersReference.AddThreeNumbersResponseBody Body;
         
         public AddThreeNumbersResponse() {
         }
         
-        public AddThreeNumbersResponse(WeatherForm.Add3NumbersReference.AddThreeNumbersResponseBody Body) {
+        public AddThreeNumbersResponse(Clients.Add3NumbersReference.AddThreeNumbersResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -100,12 +100,12 @@ namespace WeatherForm.Add3NumbersReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ThreeNumberAddSoapChannel : WeatherForm.Add3NumbersReference.ThreeNumberAddSoap, System.ServiceModel.IClientChannel {
+    public interface ThreeNumberAddSoapChannel : Clients.Add3NumbersReference.ThreeNumberAddSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ThreeNumberAddSoapClient : System.ServiceModel.ClientBase<WeatherForm.Add3NumbersReference.ThreeNumberAddSoap>, WeatherForm.Add3NumbersReference.ThreeNumberAddSoap {
+    public partial class ThreeNumberAddSoapClient : System.ServiceModel.ClientBase<Clients.Add3NumbersReference.ThreeNumberAddSoap>, Clients.Add3NumbersReference.ThreeNumberAddSoap {
         
         public ThreeNumberAddSoapClient() {
         }
@@ -127,32 +127,32 @@ namespace WeatherForm.Add3NumbersReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WeatherForm.Add3NumbersReference.AddThreeNumbersResponse WeatherForm.Add3NumbersReference.ThreeNumberAddSoap.AddThreeNumbers(WeatherForm.Add3NumbersReference.AddThreeNumbersRequest request) {
+        Clients.Add3NumbersReference.AddThreeNumbersResponse Clients.Add3NumbersReference.ThreeNumberAddSoap.AddThreeNumbers(Clients.Add3NumbersReference.AddThreeNumbersRequest request) {
             return base.Channel.AddThreeNumbers(request);
         }
         
         public string AddThreeNumbers(string tal1, string tal2, string tal3) {
-            WeatherForm.Add3NumbersReference.AddThreeNumbersRequest inValue = new WeatherForm.Add3NumbersReference.AddThreeNumbersRequest();
-            inValue.Body = new WeatherForm.Add3NumbersReference.AddThreeNumbersRequestBody();
+            Clients.Add3NumbersReference.AddThreeNumbersRequest inValue = new Clients.Add3NumbersReference.AddThreeNumbersRequest();
+            inValue.Body = new Clients.Add3NumbersReference.AddThreeNumbersRequestBody();
             inValue.Body.tal1 = tal1;
             inValue.Body.tal2 = tal2;
             inValue.Body.tal3 = tal3;
-            WeatherForm.Add3NumbersReference.AddThreeNumbersResponse retVal = ((WeatherForm.Add3NumbersReference.ThreeNumberAddSoap)(this)).AddThreeNumbers(inValue);
+            Clients.Add3NumbersReference.AddThreeNumbersResponse retVal = ((Clients.Add3NumbersReference.ThreeNumberAddSoap)(this)).AddThreeNumbers(inValue);
             return retVal.Body.AddThreeNumbersResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WeatherForm.Add3NumbersReference.AddThreeNumbersResponse> WeatherForm.Add3NumbersReference.ThreeNumberAddSoap.AddThreeNumbersAsync(WeatherForm.Add3NumbersReference.AddThreeNumbersRequest request) {
+        System.Threading.Tasks.Task<Clients.Add3NumbersReference.AddThreeNumbersResponse> Clients.Add3NumbersReference.ThreeNumberAddSoap.AddThreeNumbersAsync(Clients.Add3NumbersReference.AddThreeNumbersRequest request) {
             return base.Channel.AddThreeNumbersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WeatherForm.Add3NumbersReference.AddThreeNumbersResponse> AddThreeNumbersAsync(string tal1, string tal2, string tal3) {
-            WeatherForm.Add3NumbersReference.AddThreeNumbersRequest inValue = new WeatherForm.Add3NumbersReference.AddThreeNumbersRequest();
-            inValue.Body = new WeatherForm.Add3NumbersReference.AddThreeNumbersRequestBody();
+        public System.Threading.Tasks.Task<Clients.Add3NumbersReference.AddThreeNumbersResponse> AddThreeNumbersAsync(string tal1, string tal2, string tal3) {
+            Clients.Add3NumbersReference.AddThreeNumbersRequest inValue = new Clients.Add3NumbersReference.AddThreeNumbersRequest();
+            inValue.Body = new Clients.Add3NumbersReference.AddThreeNumbersRequestBody();
             inValue.Body.tal1 = tal1;
             inValue.Body.tal2 = tal2;
             inValue.Body.tal3 = tal3;
-            return ((WeatherForm.Add3NumbersReference.ThreeNumberAddSoap)(this)).AddThreeNumbersAsync(inValue);
+            return ((Clients.Add3NumbersReference.ThreeNumberAddSoap)(this)).AddThreeNumbersAsync(inValue);
         }
     }
 }

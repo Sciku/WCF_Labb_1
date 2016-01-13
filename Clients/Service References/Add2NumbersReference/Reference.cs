@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WeatherForm.Add2NumbersReference {
+namespace Clients.Add2NumbersReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -17,10 +17,10 @@ namespace WeatherForm.Add2NumbersReference {
         
         // CODEGEN: Generating message contract since element name tal1 from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddTwoNumbers", ReplyAction="*")]
-        WeatherForm.Add2NumbersReference.AddTwoNumbersResponse AddTwoNumbers(WeatherForm.Add2NumbersReference.AddTwoNumbersRequest request);
+        Clients.Add2NumbersReference.AddTwoNumbersResponse AddTwoNumbers(Clients.Add2NumbersReference.AddTwoNumbersRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddTwoNumbers", ReplyAction="*")]
-        System.Threading.Tasks.Task<WeatherForm.Add2NumbersReference.AddTwoNumbersResponse> AddTwoNumbersAsync(WeatherForm.Add2NumbersReference.AddTwoNumbersRequest request);
+        System.Threading.Tasks.Task<Clients.Add2NumbersReference.AddTwoNumbersResponse> AddTwoNumbersAsync(Clients.Add2NumbersReference.AddTwoNumbersRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -30,12 +30,12 @@ namespace WeatherForm.Add2NumbersReference {
     public partial class AddTwoNumbersRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="AddTwoNumbers", Namespace="http://tempuri.org/", Order=0)]
-        public WeatherForm.Add2NumbersReference.AddTwoNumbersRequestBody Body;
+        public Clients.Add2NumbersReference.AddTwoNumbersRequestBody Body;
         
         public AddTwoNumbersRequest() {
         }
         
-        public AddTwoNumbersRequest(WeatherForm.Add2NumbersReference.AddTwoNumbersRequestBody Body) {
+        public AddTwoNumbersRequest(Clients.Add2NumbersReference.AddTwoNumbersRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -68,12 +68,12 @@ namespace WeatherForm.Add2NumbersReference {
     public partial class AddTwoNumbersResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="AddTwoNumbersResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WeatherForm.Add2NumbersReference.AddTwoNumbersResponseBody Body;
+        public Clients.Add2NumbersReference.AddTwoNumbersResponseBody Body;
         
         public AddTwoNumbersResponse() {
         }
         
-        public AddTwoNumbersResponse(WeatherForm.Add2NumbersReference.AddTwoNumbersResponseBody Body) {
+        public AddTwoNumbersResponse(Clients.Add2NumbersReference.AddTwoNumbersResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -96,12 +96,12 @@ namespace WeatherForm.Add2NumbersReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface TwoNumberAddSoapChannel : WeatherForm.Add2NumbersReference.TwoNumberAddSoap, System.ServiceModel.IClientChannel {
+    public interface TwoNumberAddSoapChannel : Clients.Add2NumbersReference.TwoNumberAddSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class TwoNumberAddSoapClient : System.ServiceModel.ClientBase<WeatherForm.Add2NumbersReference.TwoNumberAddSoap>, WeatherForm.Add2NumbersReference.TwoNumberAddSoap {
+    public partial class TwoNumberAddSoapClient : System.ServiceModel.ClientBase<Clients.Add2NumbersReference.TwoNumberAddSoap>, Clients.Add2NumbersReference.TwoNumberAddSoap {
         
         public TwoNumberAddSoapClient() {
         }
@@ -123,30 +123,30 @@ namespace WeatherForm.Add2NumbersReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WeatherForm.Add2NumbersReference.AddTwoNumbersResponse WeatherForm.Add2NumbersReference.TwoNumberAddSoap.AddTwoNumbers(WeatherForm.Add2NumbersReference.AddTwoNumbersRequest request) {
+        Clients.Add2NumbersReference.AddTwoNumbersResponse Clients.Add2NumbersReference.TwoNumberAddSoap.AddTwoNumbers(Clients.Add2NumbersReference.AddTwoNumbersRequest request) {
             return base.Channel.AddTwoNumbers(request);
         }
         
         public string AddTwoNumbers(string tal1, string tal2) {
-            WeatherForm.Add2NumbersReference.AddTwoNumbersRequest inValue = new WeatherForm.Add2NumbersReference.AddTwoNumbersRequest();
-            inValue.Body = new WeatherForm.Add2NumbersReference.AddTwoNumbersRequestBody();
+            Clients.Add2NumbersReference.AddTwoNumbersRequest inValue = new Clients.Add2NumbersReference.AddTwoNumbersRequest();
+            inValue.Body = new Clients.Add2NumbersReference.AddTwoNumbersRequestBody();
             inValue.Body.tal1 = tal1;
             inValue.Body.tal2 = tal2;
-            WeatherForm.Add2NumbersReference.AddTwoNumbersResponse retVal = ((WeatherForm.Add2NumbersReference.TwoNumberAddSoap)(this)).AddTwoNumbers(inValue);
+            Clients.Add2NumbersReference.AddTwoNumbersResponse retVal = ((Clients.Add2NumbersReference.TwoNumberAddSoap)(this)).AddTwoNumbers(inValue);
             return retVal.Body.AddTwoNumbersResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WeatherForm.Add2NumbersReference.AddTwoNumbersResponse> WeatherForm.Add2NumbersReference.TwoNumberAddSoap.AddTwoNumbersAsync(WeatherForm.Add2NumbersReference.AddTwoNumbersRequest request) {
+        System.Threading.Tasks.Task<Clients.Add2NumbersReference.AddTwoNumbersResponse> Clients.Add2NumbersReference.TwoNumberAddSoap.AddTwoNumbersAsync(Clients.Add2NumbersReference.AddTwoNumbersRequest request) {
             return base.Channel.AddTwoNumbersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WeatherForm.Add2NumbersReference.AddTwoNumbersResponse> AddTwoNumbersAsync(string tal1, string tal2) {
-            WeatherForm.Add2NumbersReference.AddTwoNumbersRequest inValue = new WeatherForm.Add2NumbersReference.AddTwoNumbersRequest();
-            inValue.Body = new WeatherForm.Add2NumbersReference.AddTwoNumbersRequestBody();
+        public System.Threading.Tasks.Task<Clients.Add2NumbersReference.AddTwoNumbersResponse> AddTwoNumbersAsync(string tal1, string tal2) {
+            Clients.Add2NumbersReference.AddTwoNumbersRequest inValue = new Clients.Add2NumbersReference.AddTwoNumbersRequest();
+            inValue.Body = new Clients.Add2NumbersReference.AddTwoNumbersRequestBody();
             inValue.Body.tal1 = tal1;
             inValue.Body.tal2 = tal2;
-            return ((WeatherForm.Add2NumbersReference.TwoNumberAddSoap)(this)).AddTwoNumbersAsync(inValue);
+            return ((Clients.Add2NumbersReference.TwoNumberAddSoap)(this)).AddTwoNumbersAsync(inValue);
         }
     }
 }
