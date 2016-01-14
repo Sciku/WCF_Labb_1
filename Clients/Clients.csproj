@@ -70,6 +70,8 @@
   <ItemGroup>
     <Content Include="Add2NumbersForm.aspx" />
     <Content Include="Add3NumbersForm.aspx" />
+    <Content Include="HayaoMiyazakiMovies.txt" />
+    <Content Include="MiyazakiForm.aspx" />
     <Content Include="NameDayForm.aspx" />
     <Content Include="Namnsdagar.txt" />
     <Content Include="OscarForBestAnimatedMovies.txt" />
@@ -78,9 +80,20 @@
     <Content Include="Service References\Add2NumbersReference\Clients.Add2NumbersReference.AddTwoNumbersResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Service References\MiyazakiReference\Clients.MiyazakiReference.WriteYearReturnMovieResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\MiyazakiReference\HayaoMiyazakiMovies.disco" />
+    <None Include="Service References\MiyazakiReference\configuration91.svcinfo" />
+    <None Include="Service References\MiyazakiReference\configuration.svcinfo" />
+    <None Include="Service References\MiyazakiReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Service References\RazzieReference\Clients.RazzieReference.InputYearReturnWorstMovieResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Service References\MiyazakiReference\HayaoMiyazakiMovies.wsdl" />
     <None Include="Service References\RazzieReference\WorstMovies.disco" />
     <None Include="Service References\RazzieReference\configuration91.svcinfo" />
     <None Include="Service References\RazzieReference\configuration.svcinfo" />
@@ -173,6 +186,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MiyazakiForm.aspx.cs">
+      <DependentUpon>MiyazakiForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MiyazakiForm.aspx.designer.cs">
+      <DependentUpon>MiyazakiForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MyWeatherForm.aspx.cs">
       <DependentUpon>MyWeatherForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -201,6 +221,11 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Service References\Add3NumbersReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MiyazakiReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -243,6 +268,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\Add2NumbersReference\" />
     <WCFMetadataStorage Include="Service References\Add3NumbersReference\" />
+    <WCFMetadataStorage Include="Service References\MiyazakiReference\" />
     <WCFMetadataStorage Include="Service References\NameDayReference\" />
     <WCFMetadataStorage Include="Service References\RazzieReference\" />
     <WCFMetadataStorage Include="Service References\Subtract2NumbersReference\" />

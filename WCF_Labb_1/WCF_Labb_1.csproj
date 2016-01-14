@@ -66,7 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BestAnimated.asmx" />
+    <Content Include="HayaoMiyazakiMovies.asmx" />
     <Content Include="NameDay.asmx" />
     <Content Include="packages.config" />
     <Content Include="WorstMovies.asmx" />
@@ -85,8 +85,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BestAnimated.asmx.cs">
-      <DependentUpon>BestAnimated.asmx</DependentUpon>
+    <Compile Include="HayaoMiyazakiMovies.asmx.cs">
+      <DependentUpon>HayaoMiyazakiMovies.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="NameDay.asmx.cs">
