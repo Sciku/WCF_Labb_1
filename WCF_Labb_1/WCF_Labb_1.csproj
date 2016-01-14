@@ -66,8 +66,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BestAnimated.asmx" />
     <Content Include="NameDay.asmx" />
     <Content Include="packages.config" />
+    <Content Include="WorstMovies.asmx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -83,6 +85,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BestAnimated.asmx.cs">
+      <DependentUpon>BestAnimated.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="NameDay.asmx.cs">
       <DependentUpon>NameDay.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -102,6 +108,10 @@
     </Compile>
     <Compile Include="Weather.asmx.cs">
       <DependentUpon>Weather.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorstMovies.asmx.cs">
+      <DependentUpon>WorstMovies.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>

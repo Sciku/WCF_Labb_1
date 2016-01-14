@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InputYearReturnWorstMovie">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="inputYear" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InputYearReturnWorstMovieResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InputYearReturnWorstMovieResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InputYearReturnWorstMovieSoapIn">
+    <wsdl:part name="parameters" element="tns:InputYearReturnWorstMovie" />
+  </wsdl:message>
+  <wsdl:message name="InputYearReturnWorstMovieSoapOut">
+    <wsdl:part name="parameters" element="tns:InputYearReturnWorstMovieResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WorstMoviesSoap">
+    <wsdl:operation name="InputYearReturnWorstMovie">
+      <wsdl:input message="tns:InputYearReturnWorstMovieSoapIn" />
+      <wsdl:output message="tns:InputYearReturnWorstMovieSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WorstMoviesSoap" type="tns:WorstMoviesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InputYearReturnWorstMovie">
+      <soap:operation soapAction="http://tempuri.org/InputYearReturnWorstMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WorstMoviesSoap12" type="tns:WorstMoviesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InputYearReturnWorstMovie">
+      <soap12:operation soapAction="http://tempuri.org/InputYearReturnWorstMovie" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WorstMovies">
+    <wsdl:port name="WorstMoviesSoap" binding="tns:WorstMoviesSoap">
+      <soap:address location="http://localhost:46398/WorstMovies.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WorstMoviesSoap12" binding="tns:WorstMoviesSoap12">
+      <soap12:address location="http://localhost:46398/WorstMovies.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
