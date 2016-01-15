@@ -29,7 +29,7 @@ namespace WCF_Labb_1
 
                 if (split.Contains(inputYear))
                 {
-                    movieTitle = "Filmen/filmerna som släpptes det året var: " + split[1] + "," + split[2] + "";
+                    movieTitle = "Filmen/filmerna som släpptes det året var: " + split[1] + "," + split[2];
 
                 }
             }
